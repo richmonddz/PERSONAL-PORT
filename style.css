@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,600");
+
+header {
+  font-size: 100px;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+  margin-bottom: 70px;
+  padding: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: "Poppins";
+}
+
+.hero {
+  background-image: url(images/paul-gilmore-KT3WlrL_bsg-unsplash.jpg);
+  background-size: cover;
+  height: 600px;
+  padding: 1em;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-disp1 {
+  font-size: 50px;
+  border: 0px;
+  margin-right: 850px;
+}
+
+.hero-disp2 {
+  font-size: 50px;
+  border: 0px;
+  margin-left: 677px;
+}
+
+h2 {
+  font-size: 5rem;
+  color: blanchedalmond;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  outline: 5px solid #fff;
+  outline-offset: 0.25em;
+  display: inline-block;
+  margin: 0.25em 300px 0.5em;
+}
+
+.about-me {
+  font-size: 45px;
+  border: 0px;
+  display: flex;
+  justify-content: center;
+  padding: 150px;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-end;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+  margin: 100px 100px;
+  margin-left: 500px;
+  padding: 30px;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-start;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+  margin: 100px 100px;
+  margin-right: 500px;
+
+  padding: 30px;
+}
+
+.ending {
+  display: flex;
+  font-size: medium;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+p {
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+  margin: 100px 100px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 576px) {
+}
