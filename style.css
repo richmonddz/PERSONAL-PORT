@@ -1,14 +1,52 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,600");
 
 header {
-  font-size: 100px;
-  border: 1px;
-  border-color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 2px;
   border-style: solid;
-  margin-bottom: 70px;
-  padding: 150px;
+  border-color: black;
   display: flex;
-  justify-content: center;
+  justify-content: end;
+  flex: 30px;
+  background-color: #405060;
+  color: antiquewhites;
+}
+
+a {
+  position: relative;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: aqua;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.top:hover,
+.project1:hover,
+.left1:hover,
+.project2:hover,
+.left2:hover,
+.project3:hover,
+.right1:hover,
+.project4:hover,
+.right2:hover,
+.project5:hover {
+  border-color: aqua;
 }
 
 body {
@@ -28,20 +66,8 @@ body {
   justify-content: center;
 }
 
-.hero-disp1 {
-  font-size: 50px;
-  border: 0px;
-  margin-right: 850px;
-}
-
-.hero-disp2 {
-  font-size: 50px;
-  border: 0px;
-  margin-left: 677px;
-}
-
 h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: blanchedalmond;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -51,57 +77,152 @@ h2 {
   margin: 0.25em 300px 0.5em;
 }
 
+h3 {
+  font-size: 50px;
+  display: flex;
+  position: absolute;
+  margin: 1px;
+  margin-top: -5px;
+  margin-left: 70px;
+}
+
 .about-me {
-  font-size: 45px;
+  font-size: 25px;
   border: 0px;
   display: flex;
   justify-content: center;
-  padding: 150px;
+  padding: 100px;
 }
 
-.left {
+.top {
   display: flex;
-  justify-content: flex-end;
-  border: 1px;
+  position: static;
+  border: 5px;
   border-color: black;
   border-style: solid;
-  margin: 100px 100px;
-  margin-left: 500px;
-  padding: 30px;
+  padding: 300px;
+  background-image: url(images/Screenshot1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.right {
+.project1 {
   display: flex;
-  justify-content: flex-start;
-  border: 1px;
+  position: absolute;
+  border: 5px;
   border-color: black;
   border-style: solid;
-  margin: 100px 100px;
-  margin-right: 500px;
+  margin: -154px 0px;
+  padding: 50px 123px;
+  background-color: antiquewhite;
+}
 
-  padding: 30px;
+.left1 {
+  float: left;
+  width: 25%;
+  padding: 180px;
+  border: 5px;
+  border-color: black;
+  border-style: solid;
+  background-image: url(images/depositphotos_219989508-stock-illustration-project-team-engineers-website-create.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.left2 {
+  float: left;
+  width: 25%;
+  padding: 180px;
+  border: 5px;
+  border-color: black;
+  border-style: solid;
+  background-image: url(images/web.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.right1 {
+  float: left;
+  width: 25%;
+  padding: 180px;
+  border: 5px;
+  border-color: black;
+  border-style: solid;
+  background-image: url(images/iuriimotov190100072.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.right2 {
+  float: left;
+  width: 25%;
+  padding: 180px;
+  border: 5px;
+  border-color: black;
+  border-style: solid;
+  background-image: url(images/7afc281448aad5df4f567968b19e5733.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project2 {
+  display: flex;
+  position: absolute;
+  border: 5px;
+  border-color: black;
+  border-style: solid;
+  margin: 227px 0px;
+  padding: 25px 45px;
+  background-color: antiquewhite;
+}
+
+.project3 {
+  display: flex;
+  position: absolute;
+  border: 5px;
+  border-color: black;
+  border-style: solid;
+  margin: 227px 741px;
+  padding: 25px 45px;
+  background-color: antiquewhite;
+}
+
+.project4 {
+  display: flex;
+  position: absolute;
+  border: 5px;
+  border-color: black;
+  border-style: solid;
+  margin: 638px 0px;
+  padding: 25px 45px;
+  background-color: antiquewhite;
+}
+
+.project5 {
+  display: flex;
+  position: absolute;
+  border: 5px;
+  border-color: black;
+  border-style: solid;
+  margin: 638px 741px;
+  padding: 25px 45px;
+  background-color: antiquewhite;
 }
 
 .ending {
-  display: flex;
-  font-size: medium;
-  justify-content: center;
+  font-size: 50px;
   margin-top: 150px;
 }
 
-p {
-  border: 1px;
-  border-color: black;
-  border-style: solid;
-  margin: 100px 100px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
+nav {
+  float: right;
+  margin-right: 50px;
+  margin-top: -28px;
 }
 
-@media screen and (max-width: 992px) {
-}
-@media screen and (max-width: 768px) {
-}
-@media screen and (max-width: 576px) {
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+  position: relative;
 }
