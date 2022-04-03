@@ -243,17 +243,3 @@ nav li {
   padding-top: 23px;
   position: relative;
 }
-
-@media screen and (max-width: 700px) {
-  header,
-  nav,
-  div,
-  section,
-  .project1,
-  .project2,
-  .project3,
-  .project4,
-  .project5,
-  .ending {
-  }
-}
