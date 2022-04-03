@@ -23,7 +23,7 @@ a::before {
   width: 100%;
   height: 4px;
   border-radius: 4px;
-  background-color: aqua;
+  background-color: antiquewhite;
   bottom: 0;
   left: 0;
   transform-origin: right;
@@ -37,16 +37,16 @@ a:hover::before {
 }
 
 .top:hover,
-.project1:hover,
 .left1:hover,
-.project2:hover,
 .left2:hover,
-.project3:hover,
 .right1:hover,
-.project4:hover,
-.right2:hover,
-.project5:hover {
-  border-color: aqua;
+.right2:hover {
+  cursor: pointer;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  opacity: 65%;
+  border-color: antiquewhite;
 }
 
 body {
@@ -82,16 +82,32 @@ h3 {
   display: flex;
   position: absolute;
   margin: 1px;
-  margin-top: -5px;
+  margin-top: -99px;
   margin-left: 70px;
+  outline: 5px solid #fff;
+  outline-offset: 0.25em;
 }
 
 .about-me {
   font-size: 25px;
+  margin: 128px 56px 195px 290px;
   border: 0px;
   display: flex;
   justify-content: center;
-  padding: 100px;
+  padding: 15px;
+  outline: 5px solid #fff;
+  outline-offset: 0.25em;
+}
+
+h1 {
+  font-size: 50px;
+  display: flex;
+  position: absolute;
+  margin: 1px;
+  margin-top: -88px;
+  margin-left: 70px;
+  outline: 5px solid black;
+  outline-offset: 0.25em;
 }
 
 .top {
@@ -182,7 +198,7 @@ h3 {
   border: 5px;
   border-color: black;
   border-style: solid;
-  margin: 227px 741px;
+  margin: 227px 742px;
   padding: 25px 45px;
   background-color: antiquewhite;
 }
@@ -204,14 +220,15 @@ h3 {
   border: 5px;
   border-color: black;
   border-style: solid;
-  margin: 638px 741px;
+  margin: 638px 742px;
   padding: 25px 45px;
   background-color: antiquewhite;
 }
 
-.ending {
+footer {
   font-size: 50px;
   margin-top: 150px;
+  text-decoration: underline;
 }
 
 nav {
@@ -225,4 +242,18 @@ nav li {
   margin-left: 70px;
   padding-top: 23px;
   position: relative;
+}
+
+@media screen and (max-width: 700px) {
+  header,
+  nav,
+  div,
+  section,
+  .project1,
+  .project2,
+  .project3,
+  .project4,
+  .project5,
+  .ending {
+  }
 }
